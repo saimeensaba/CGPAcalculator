@@ -1,0 +1,37 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="css/cgpastyle.css" />
+    <script src="js/pdf.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/html2pdf.js/0.10.1/html2pdf.bundle.min.js"></script>
+    <title>CGPA calculator</title>
+  </head>
+  <body >
+    <div class="cgpa_container" id="printpage">
+<div class="cgpa_title"><h4>CGPA Calculator</h4></div>
+        <input type="text" id="first-gpa" placeholder="1st Semester">
+        <input type="text" id="two-gpa" placeholder="2nd Semester">
+        <input type="text" id="three-gpa" placeholder="3rd Semester">
+        <input type="text" id="four-gpa" placeholder="4th Semester">
+        <input type="text" id="five-gpa" placeholder="5th Semester">
+        <input type="text" id="six-gpa" placeholder="6th Semester">
+        <input type="text" id="seven-gpa" placeholder="7th Semester">
+        <input type="text" id="eight-gpa" placeholder="8th Semester">
+    <div class="cgpa_output">
+      <h1>TOTAL CGPA =</h1>
+      <button id="btn_re">
+        Reset
+      </button>
+      <button id="btn_sub">
+       Submit
+      </button>
+      <button id="download">
+        Download
+       </button>
+    </div>
+    </div>
+    <script src="js/cgpa.js"></script>
+  </body>
+</html>

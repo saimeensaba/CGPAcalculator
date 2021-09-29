@@ -1,0 +1,139 @@
+*
+{
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
+body{
+    background-image: url(../image/background.jpg);
+    background-size: cover;
+    font-family: Bahnschrift SemiBold;
+}
+h1{
+    text-align: center;
+    color: black;
+    padding: 5px;
+}
+h2{
+    text-decoration: none;
+}
+.menu-bar{
+    background: rgb(77, 179, 77);
+    text-align: center;
+}
+.menu-bar ul{
+    display: inline-flex;
+    list-style: none;
+    color: white;
+}
+.menu-bar ul li{
+    width: 120px;
+    margin: 15px;
+    padding: 15px;
+    white-space: normal;
+}
+.menu-bar ul li a{
+    text-decoration: none;
+    color: white;
+}
+.active, .menu-bar ul li:hover{
+    background: #2ba20d;
+    border-radius: 2px;
+}
+.submenu1{
+    display: none;
+}
+.menu-bar ul li:hover .submenu1{
+    display: block;
+    position: absolute;
+    background: rgb(77, 179, 77);    
+    margin-top: 15px;
+    margin-left: -15px;
+}
+.menu-bar ul li:hover .submenu1 ul{
+    display: block;
+    margin: 10px;
+}
+.menu-bar ul li:hover .submenu1 ul li{
+    width: 150px;
+    padding: 10px;
+    border-bottom: 1px dotted #fff;
+    background: transparent;
+    border-radius: 0;
+    text-align: left;
+}
+.menu-bar ul li:hover .submenu1 ul li:last-child{
+    border-bottom: none;
+}
+.menu-bar ul li:hover .submenu1 ul li a:hover{
+    color: #b2ff00;
+}
+.select{
+    display: flex;
+    text-align: center;
+    justify-content: center;
+    margin: 10px;
+    padding: 10px;
+    color: black;
+}
+
+#option{
+    position: relative;
+    left: 80px;
+}
+button{
+    border-radius: 3px;
+    border: none;
+    outline: none;
+    width: fit-content;
+}
+
+  
+#physics,#chemistry,#computers, #electronics,#mechanical,#civil,#information,#telecommu
+ {
+    padding-left: 90px;
+    width: 100%;
+    margin: 27px; 
+    border-radius: 10px;
+    box-shadow: transparent;
+    color: black;
+}
+#inputsidebar1,#inputsidebar2,#inputsidebar3,#inputsidebar4,#inputsidebar5,#inputsidebar6,#inputsidebar7,#inputsidebar8,#inputsidebar9,#inputsidebar10,#inputsidebar11,#inputsidebar12,#inputsidebar13,#inputsidebar14,#inputsidebar15,#inputsidebar16,
+#inputsidebar17,#inputsidebar18,#inputsidebar19,#inputsidebar20,#inputsidebar21,#inputsidebar22,#inputsidebar23,#inputsidebar24,#inputsidebar25,#inputsidebar26,#inputsidebar27,#inputsidebar28,#inputsidebar29,#inputsidebar30,#inputsidebar31,#inputsidebar32,
+#inputsidebar33,#inputsidebar34,#inputsidebar35,#inputsidebar36,#inputsidebar37,#inputsidebar38,#inputsidebar39,#inputsidebar40,#inputsidebar41,#inputsidebar42
+,#inputsidebar43,#inputsidebar44,#inputsidebar45,#inputsidebar46,#inputsidebar47,#inputsidebar48,#inputsidebar49,#inputsidebar50,#inputsidebar51,#inputsidebar52
+{
+    border-radius: 3px;
+    border: none;
+    outline: none;
+    width: 75px;
+    margin:4px;
+    color:black;
+}
+
+.inputside{
+    border-radius: 3px;
+    border:none;
+    outline: none;
+    width: 30px;
+    margin:4px;
+    color:black;
+}
+
+ .sgpa_output #btn_re,
+   .sgpa_output #btn_sub,
+  .sgpa_output #download
+  {
+      border: none;
+      outline: none;
+      font-family:Bahnschrift SemiBold;
+      cursor: pointer;
+      border-radius: 3px;
+      padding: 2px;
+      text-align: center;
+      justify-content: center;
+      align-items: center;
+      padding: 5px 5px;
+      margin-left: 15px;
+      
+  } 

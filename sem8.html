@@ -1,0 +1,129 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title> Semester 8</title>
+    <link rel="stylesheet" href="css/sem.css">
+    <script src="js/sem8.js"></script>
+    <script src="js/pdf.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/html2pdf.js/0.10.1/html2pdf.bundle.min.js"></script>
+</head>
+<body>
+    <div id="printpage">
+    <div class="menu-bar">
+        <ul>
+            <li class="active"><a href="index.php">Home</a></li>
+            <li ><a href="#" target="_blank">SGPA</a>
+                <div class="submenu1">
+                    <ul>
+                        <li><a href="sem1.html">Sem1</a></li>
+                        <li><a href="sem2.html">Sem2</a></li>
+                        <li><a href="sem3.html">Sem3</a></li>
+                        <li><a href="sem4.html">Sem4</a></li>
+                        <li><a href="sem5.html">Sem5</a></li>
+                        <li><a href="sem6.html">Sem6</a></li>
+                        <li><a href="sem7.html">Sem7</a></li>
+                        <li><a href="#">Sem8</a></li>
+                    </ul>
+                </div>
+            </li>
+            <li><a href="cgpa.html" target="_blank">CGPA</a></li>
+        </ul>
+    </div>
+    <h1> 8th semester</h1>
+    <div class="select">
+        <h1> Select your branch</h1>
+        <select id="option" onchange="showhidden()">
+            <option disabled="disabled" selected="selected">--Choose--</option>
+            <option value="C"> CS</option>
+            <option value="I"> IS</option>
+            <option value="E"> EC</option>
+            <option value="T"> TC</option>
+            <option value="M"> MECH</option>
+            <option value="L"> CIVIL</option>
+        </select>
+    </div>
+    <div id="computers" style="display: none;">  
+        <form>
+        <label>INTERNET OF THINGS :                     </label><input class="spacing" id="inputsidebar1" type="number" min="0" max="100" placeholder="marks"><button>/100</button><br>
+        <label>PROFESSIONAL ELECTIVE 4:                 </label><input class="spacing" id="inputsidebar2" type="number" min="0" max="100" placeholder="marks"><button>/100</button><br>
+        <label>PROJECT WORK PHASE 2:                    </label><input class="spacing" id="inputsidebar3" type="number" min="0" max="100" placeholder="marks"><button>/100</button><br>
+        <label>TECHNICAL SEMINAR:                       </label><input class="spacing" id="inputsidebar4" type="number" min="0" max="100" placeholder="marks"><button>/100</button><br>
+        <label>INTERNSHIP:                              </label><input class="spacing" id="inputsidebar5" type="number" min="0" max="100" placeholder="marks"><button>/100</button><br>
+    </form>
+    </div>
+    <div id="electronics" style="display: none;">  
+        <form>
+        <label>WIRELESS AND CELLULAR COMMUNICATION:     </label><input class="spacing" id="inputsidebar6" type="number" min="0" max="100" placeholder="marks"><button>/100</button><br>
+        <label>PROFESSIONAL ELECTIVE 4:                 </label><input class="spacing" id="inputsidebar7" type="number" min="0" max="100" placeholder="marks"><button>/100</button><br>
+        <label>PROJECT WORK PHASE 2:                    </label><input class="spacing" id="inputsidebar8" type="number" min="0" max="100" placeholder="marks"><button>/100</button><br>
+        <label>TECHNICAL SEMINAR:                       </label><input class="spacing" id="inputsidebar9" type="number" min="0" max="100" placeholder="marks"><button>/100</button><br>
+        <label>INTERNSHIP:                              </label><input class="spacing" id="inputsidebar10" type="number" min="0" max="100" placeholder="marks"><button>/100</button><br>
+    </form>
+    </div>
+    <div id="mechanical" style="display: none;">  
+        <form>
+        <label>ENERGY ENGINEERING:                       </label><input class="spacing" type="number" id="inputsidebar11"min="0"max="100" placeholder="marks"><button>/100</button><br>
+        <label>PROFESSIONAL ELECTIVE 4:                  </label><input class="spacing" type="number" id="inputsidebar12"min="0" max="100" placeholder="marks"><button></button>/100</button><br>
+        <label>PROJECT WORK PHASE 2:                     </label><input class="spacing" type="number" id="inputsidebar13"min="0" max="100" placeholder="marks"><button>/100</button><br>
+        <label>TECHNICAL SEMINAR:                       </label><input class="spacing" type="number" id="inputsidebar14"min="0" max="100" placeholder="marks"><button>/100</button><br>
+        <label>INTERNSHIP:                               </label><input class="spacing" type="number" id="inputsidebar15"min="0" max="100" placeholder="marks"><button>/100</button><br>
+    </form>
+    </div>
+    <div id="civil" style="display: none;">  
+        <form>
+        <label>DESIGN OF PRE STRESSED CONCRETE: </label><input class="spacing" id="inputsidebar16" type="number" min="0" max="100" placeholder="marks"><button>/100</button><br>
+        <label>PROFESSIONAL ELECTIVE 4:         </label><input class="spacing" id="inputsidebar17" type="number" min="0" max="100" placeholder="marks"><button>/100</button><br>
+        <label>PROJECT WORK PHASE 2:            </label><input class="spacing" id="inputsidebar18" type="number" min="0" max="100" placeholder="marks"><button>/100</button><br>
+        <label>TECHNICAL SEMINAR:               </label><input class="spacing" id="inputsidebar19" type="number" min="0" max="100" placeholder="marks"><button>/100</button><br>
+        <label>INTERNSHIP:                      </label><input class="spacing" id="inputsidebar20" type="number" min="0" max="100" placeholder="marks"><button>/100</button><br>
+    </form>
+    </div>
+    <div id="information" style="display: none;">
+        <form> 
+        <label>INTERNET OF THINGS:             </label><input class="spacing" id="inputsidebar21" type="number" min="0" max="100" placeholder="marks"><button>/100</button><br>
+        <label>PROFESSIONAL ELECTIVE 2:        </label><input class="spacing" id="inputsidebar22" type="number" min="0" max="100" placeholder="marks"><button>/100</button><br>
+        <label>PROJECT WORK PHASE 2:           </label><input class="spacing" id="inputsidebar23" type="number" min="0" max="100" placeholder="marks"><button>/100</button><br>
+        <label>TECHNICAL SEMINAR:              </label><input class="spacing" id="inputsidebar24" type="number" min="0" max="100" placeholder="marks"><button>/100</button><br>
+        <label>INTERNSHIP:                     </label><input class="spacing" id="inputsidebar25" type="number" min="0" max="100" placeholder="marks"><button>/100</button><br>
+    </form>
+    </div>
+    <div id="telecommu" style="display: none;"> 
+        <form> 
+        <label>ADVANCED CELLULAR COMMUNICATION:    </label><input class="spacing" id="inputsidebar26" type="number" min="0" max="100" placeholder="marks"><button>/100</button><br>
+        <label>PROFESSIONAL ELECTIVE 2:            </label><input class="spacing" id="inputsidebar27" type="number" min="0" max="100" placeholder="marks"><button>/100</button><br>
+        <label>PROJECT WORK PHASE 2:               </label><input class="spacing" id="inputsidebar28" type="number" min="0" max="100" placeholder="marks"><button>/100</button><br>
+        <label>TECHNICAL SEMINAR:                  </label><input class="spacing" id="inputsidebar29" type="number" min="0" max="100" placeholder="marks"><button>/100</button><br>
+        <label>INTERNSHIP:                         </label><input class="spacing" id="inputsidebar30" type="number" min="0" max="100" placeholder="marks"><button>/100</button><br>
+    </form>
+    </div>
+
+    <div class="sgpa_output">
+        <h1> SGPA =</h1>
+        <button id="btn_re" onclick="doReset()">Reset</button>
+        <button id="btn_sub" onclick="dothis()">Submit</button>
+        <button id="download">Download</button>
+     </div> 
+    </div>
+</body>
+<script type="text/javascript">
+function showhidden(){
+    let option=document.getElementById("option");
+    let computers=document.getElementById("computers");
+    computers.style.display = option.value == "C" ? "block" : "none";
+    let information=document.getElementById("information");
+    information.style.display = option.value == "I" ? "block" : "none";
+    let electronics=document.getElementById("electronics");
+    electronics.style.display = option.value == "E" ? "block" : "none";
+    let telecommu=document.getElementById("telecommu");
+    telecommu.style.display = option.value == "T" ? "block" : "none";
+    let mechanical=document.getElementById("mechanical");
+    mechanical.style.display = option.value == "M" ? "block" : "none";
+    let civil=document.getElementById("civil");
+    civil.style.display = option.value == "L" ? "block" : "none";
+}
+</script>
+</body>
+</html>

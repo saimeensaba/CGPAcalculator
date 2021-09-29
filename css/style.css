@@ -1,0 +1,134 @@
+*
+{
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
+body{
+    background-image: url(../image/background.jpg);
+    background-size: cover;
+    font-family: Bahnschrift SemiBold;
+}
+.menu-bar{
+    background: rgb(77, 179, 77);
+    text-align: center;
+}
+.menu-bar ul{
+    display: inline-flex;
+    list-style: none;
+    color: white;
+    font-size: larger;
+}
+.menu-bar ul li{
+    width: 120px;
+    margin: 15px;
+    padding: 15px;
+}
+.menu-bar ul li a{
+    text-decoration: none;
+    color: white;
+}
+.active, .menu-bar ul li:hover{
+    background: #2ba20d;
+    border-radius: 2px;
+}
+.submenu1{
+    display: none;
+}
+.menu-bar ul li:hover .submenu1{
+    display: block;
+    position: absolute;
+    background: rgb(77, 179, 77);   
+    margin-top: 15px;
+    margin-left: -15px;
+}
+.menu-bar ul li:hover .submenu1 ul{
+    display: block;
+    margin: 10px;
+}
+.menu-bar ul li:hover .submenu1 ul li{
+    width: 150px;
+    padding: 10px;
+    border-bottom: 1px dotted #fff;
+    background: transparent;
+    border-radius: 0;
+    text-align: left;
+}
+.menu-bar ul li:hover .submenu1 ul li:last-child{
+    border-bottom: none;
+}
+.menu-bar ul li:hover .submenu1 ul li a:hover{
+    color: #b2ff00;
+}
+.banner{
+    width: 80%;
+    height: 70%;
+    top: 25%;
+    left: 20px;
+    position: absolute;
+    color: white;
+}
+.text{
+    width: 50%;
+    float: left;
+}
+.text h1{
+    font-size: 38px;
+    width:  640px;
+    position: relative;
+    margin-left: 40px;
+}
+.text p{
+    width: 650px;
+    margin: 30px 0px 30px 40px;
+    line-height: 25px;
+    color: yellowgreen;
+    font-size:larger;
+    text-decoration: none;
+}
+.rightside{
+    position: absolute;
+    justify-content: right;
+    font-size: larger;
+    width: 50px;
+    height: 120px;
+    right: 250px;
+    padding-top: 40px;
+}
+.rightside ul{
+    list-style: none;
+
+}
+.rightside ul li{
+    padding: 8px;
+    
+}
+.rightside ul li a {
+    text-decoration: none;
+    color: white;
+}
+.rightside ul li a:hover{
+    color: yellowgreen;
+}
+.banner .text a{
+    text-align: center;
+    text-decoration: none;
+    color: white;
+}
+.burger{
+    display: none;
+position:absolute;
+cursor: pointer;
+right: 5%;
+top: 10px;
+}
+.line{
+    width: 10px;
+    background-color: white;
+    height: 4px;
+    margin: 5px 3px;
+}
+
+
+
+

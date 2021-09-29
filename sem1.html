@@ -1,0 +1,90 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Semester 1</title>
+    <link rel="stylesheet" href="css/sem.css">
+    <script src="js/sem1.js"></script>  
+    <script src="js/pdf.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/html2pdf.js/0.10.1/html2pdf.bundle.min.js"></script>
+
+</head>
+<body>
+    <div id="printpage">
+    <div class="menu-bar">
+        <ul>
+            <li class="active"><a href="index.php">Home</a></li>
+            <li ><a href="#" target="_blank">SGPA</a>
+                <div class="submenu1">
+                    <ul>
+                        <li><a href="sem1.html">Sem1</a></li>
+                        <li><a href="sem2.html">Sem2</a></li>
+                        <li><a href="sem3.html">Sem3</a></li>
+                        <li><a href="sem4.html">Sem4</a></li>
+                        <li><a href="sem5.html">Sem5</a></li>
+                        <li><a href="sem6.html">Sem6</a></li>
+                        <li><a href="sem7.html">Sem7</a></li>
+                        <li><a href="sem8.html">Sem8</a></li>
+                    </ul>
+                </div>
+            </li>
+            <li><a href="cgpa.html" target="_blank">CGPA</a></li>
+        </ul>
+    </div>
+    <h1> 1st semester</h1>
+    <div class="select">
+        <h1> Select your cycle</h1>
+        <select id="option" onchange="showhidden()">
+            <option disabled="disabled" selected="selected">--Choose--</option>
+            <option value="P"> Physics Cycle</option>
+            <option value="C"> Chemistry Cycle</option>
+        </select>
+    
+    </div>
+    <div id="physics" style="display: none;" onclick="dothis()" >  
+        <form>
+        <label>CALCULUS AND LINEAR ALGEBRA:                   </label><input class="spacing" id="inputsidebar1" placeholder="marks" type="number" min="0" max="100"><button >/100</button><br>
+        <label>ENGINEERING PHYSICS:                           </label><input class="spacing" id="inputsidebar2" placeholder="marks" type="number" min="0" max="100"><button >/100</button><br>
+        <label>BASIC ELECTRICAL ENGINEERING:                  </label><input class="spacing" id="inputsidebar3" placeholder="marks" type="number" min="0" max="100"><button >/100</button><br>
+        <label>ELEMENTS OF CIVIL ENGINEERING AND MECHANICS:   </label><input class="spacing" id="inputsidebar4" placeholder="marks" type="number" min="0" max="100"><button >/100</button><br>
+        <label>ENGINEERING GRAPHICS:                          </label><input class="spacing" id="inputsidebar5" placeholder="marks" type="number" min="0" max="100"><button >/100</button><br>
+        <label>TECHNICAL ENGLISH-I:                           </label><input class="spacing" id="inputsidebar6" placeholder="marks" type="number" min="0" max="100"><button >/100</button><br>
+        <label>ENGINEERING PHYSICS LAB:                       </label><input class="spacing" id="inputsidebar7" placeholder="marks" type="number" min="0" max="100"><button >/100</button><br>
+        <label>BASIC ELECTRICAL ENGINEERING LAB:              </label><input class="spacing" id="inputsidebar8" placeholder="marks" type="number" min="0" max="100"><button >/100</button><br>
+    </form>
+    </div>
+    <div id="chemistry" style="display: none;" onclick="dothis()">  
+        <form >
+        <label>CALCULUS AND LINEAR ALGEBRA:                  </label><input class="spacing" id="inputsidebar9" placeholder="marks" type="number" min="0" max="100"  ><button >/100</button><br>
+        <label>ENGINEERING CHEMISTRY:                        </label><input class="spacing" id="inputsidebar10" placeholder="marks" type="number" min="0" max="100" ><button >/100</button><br>
+        <label>C PROGRAMMING FOR PROBLEM SOLVING:            </label><input class="spacing" id="inputsidebar11" placeholder="marks" type="number" min="0" max="100" ><button >/100</button><br>
+        <label>BASIC ELECTRONICS:                            </label><input class="spacing" id="inputsidebar12" placeholder="marks" type="number" min="0" max="100" ><button >/100</button><br>
+        <label>ELEMENTS OF MECHANICAL ENGINEERING:           </label><input class="spacing" id="inputsidebar13" placeholder="marks" type="number" min="0" max="100" ><button >/100</button><br>
+        <label>TECHNICAL ENGLISH-I:                          </label><input class="spacing" id="inputsidebar14" placeholder="marks" type="number" min="0" max="100" ><button >/100</button><br> 
+        <label>ENGINEERING CHEMISTRY LAB:                 </label><input class="spacing" id="inputsidebar15" placeholder="marks" type="number" min="0" max="100"><button >/100</button><br>
+        <label>C PROGRAMMING LAB:                         </label><input class="spacing" id="inputsidebar16" placeholder="marks" type="number" min="0" max="100"><button >/100</button><br>
+    </form>
+</div>  
+    
+    <div class="sgpa_output">
+        <h1 id="last"> SGPA =</h1>
+        <button id="btn_re" onclick="doReset()">Reset</button>
+        <button id="btn_sub" onclick="dothis()">Submit</button>
+        <button id="download">Download</button>
+     </div>  
+     
+    </div>
+     
+</body>
+<script type="text/javascript">
+function showhidden(){
+    var option=document.getElementById("option");
+    var physics=document.getElementById("physics");
+    physics.style.display = option.value == "P" ? "block" : "none";
+    var chemistry=document.getElementById("chemistry");
+    chemistry.style.display = option.value == "C" ? "block" : "none";
+}
+</script>
+</html>
